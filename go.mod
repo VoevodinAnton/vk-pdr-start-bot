@@ -3,7 +3,7 @@ module github.com/VoevodinAnton/vk-pdr-start-bot
 go 1.17
 
 require (
-	github.com/SevereCloud/vksdk/v2 v2.13.1
+	github.com/SevereCloud/vksdk/v2 v2.14.0
 	github.com/robfig/cron/v3 v3.0.1
 )
 
