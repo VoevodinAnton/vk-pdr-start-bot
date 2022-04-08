@@ -28,7 +28,6 @@ func main() {
 	lp.MessageNew(func(ctx context.Context, obj events.MessageNewObject) {
 		println(obj.Message.Text)
 		PeerId := obj.Message.PeerID
-		//println(PeerId)
 		if strings.Split(obj.Message.Text, " ")[1] == "start" {
 			log.Print("Job is started")
 			defer scheduler.Stop()
