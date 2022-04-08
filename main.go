@@ -32,7 +32,7 @@ func main() {
 		if strings.Split(obj.Message.Text, " ")[1] == "start" {
 			log.Print("Job is started")
 			defer scheduler.Stop()
-			scheduler.AddFunc("* * * * *", func() { startPidorBot(vk, PeerId) })
+			scheduler.AddFunc("0 */12 * * *", func() { startPidorBot(vk, PeerId) })
 			go scheduler.Start()
 		}
 	})
